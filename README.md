@@ -3,7 +3,7 @@
 In the research Finding the best methods for image scaling (https://github.com/garamond13/Finding-the-best-methods-for-image-scaling) I presented the garamond window. Now I will present the new derived window, the kaiser-garamond window.
 
 The kaiser window \
-w(x) = `x <= R ? I0(beta * sqrt(1.0 - x * x / (R / R))) / I0(beta) : 0.0`, where I0() is the modified bessel function of the first kind, (beta) is free parameter and R is the kernel radius. Note, division by I0(beta) is only for the normalization. \
+w(x) = `x <= R ? I0(beta * sqrt(1.0 - x * x / (R * R))) / I0(beta) : 0.0`, where I0() is the modified bessel function of the first kind, (beta) is free parameter and R is the kernel radius. Note, division by I0(beta) is only for the normalization. \
 at beta=0.0, w(x)=box window
 
 The kaiser-garamond window \
